@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+<body>
+<h1>Weather Data API</h1>
+<h2>
+    Resting API for getting weather data by station number
+</h2>
+<p>
+    URL format for a specific station and date: http://127.0.0.1:5000/api/v1/station/date
+    <br>
+    Example: http://127.0.0.1:5000/api/v1/10/19881025
+    <br>
+    <br>
+    URL format for full year date for a specific station: http://127.0.0.1:5000/api/v1/station/year
+    <br>
+    Example: http://127.0.0.1:5000/api/v1/10/1988
+    <br>
+    <br>
+    URL format for all station data: http://127.0.0.1:5000/api/v1/station
+    <br>
+    Example: http://127.0.0.1:5000/api/v1/10
+</p>
+
+<p>{{data|safe}}</p>
+</body>
 <head>
     <meta charset="UTF-8">
     <title>Weather API</title>
 </head>
-<body>
-    <h1>Weather Data API</h1>
-    <h2>
-        Resting API for getting weather data by station number
-    </h2>
-    <p>
-        URL format: http://127.0.0.1:5000/api/v1/station/date
-        <br>
-        Example: http://127.0.0.1:5000/api/v1/10/19881025
-    </p>
-</body>
 </html>
